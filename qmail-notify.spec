@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/System
 Source0:	http://em.ca/~bruceg/qmail-notify/0.93/%{name}-%{version}.tar.gz
+# Source0-md5:	b1a5f35f0d6189b4b4ea92f08ab6916f
 Source1:	%{name}.1
 URL:		http://em.ca/~bruceg/qmail-notify/
 Requires:	qmail
