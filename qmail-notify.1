@@ -1,0 +1,65 @@
+.TH "qmail-notify" "1" "0.0.0" "Me" "My set of programs"
+.SH "NAME"
+.LP 
+qmail\-notify \- Delayed delivery notification for qmail
+.SH "SYNTAX"
+.LP 
+qmail\-notify [\fI\-b N\fP] [\fI\-fmrxh\fP] [\fI\-t N\fP] [\fI\-\-help\fP] 
+
+.SH "DESCRIPTION"
+.LP 
+
+This is a program to notify senders about email that has
+been held in the qmail queue.
+
+.SH "OPTIONS"
+.LP 
+.TP 
+$ qmail\-notify 
+\fI\-b\fP         Copy N bytes from the original message into the notice.
+.br 
+(Defaults to entire message).
+.br
+\fI\-d\fR          Show debugging messages 
+.br
+\fI\-f\fR          Load the bounce response message from a file
+.br
+\fI\-m\fR          Encode the original message as a MIME attachment
+.br 
+\fI\-N\fR          Don't send messages, just print them out
+.br 
+\fI\-r\fR          Only respond to senders with a domain listed in qmail's rcpthosts.br 
+.br 
+\fI\-t\fR          Send notifications for messages that are at least N seconds old. 
+(Defaults to 4 hours).
+.br 
+\fI\-x \fR         Send a copy of the notification to the given recipient.br 
+\fI\-h, \-\-help\fR  Display help and exit
+.SH "FILES"
+.LP 
+\fI\fP 
+.br 
+\fI\fP 
+.SH "ENVIRONMENT VARIABLES"
+.LP 
+.TP 
+.TP 
+.SH "EXAMPLES"
+.LP 
+To run this program the standard way type, put into crontab\-hourly:
+
+cat  >/etc/cron.hourly/qmail\-notify << EOF
+
+#!/bin/sh
+
+/usr/bin/qmail\-notify \-f /etc/qmail/qmail\-notify/message.txt
+
+EOF
+
+.LP 
+.SH "AUTHORS"
+.LP 
+Bruce Guenter <bruceg@em.ca>
+.SH "SEE ALSO"
+.LP 
+qmail(2)
