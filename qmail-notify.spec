@@ -5,10 +5,10 @@ Version:	0.93
 Release:	1
 License:	GPL
 Group:		Applications/System
-Source0:	http://em.ca/~bruceg/qmail-notify/0.93/%{name}-%{version}.tar.gz
-# Source0-md5:	b1a5f35f0d6189b4b4ea92f08ab6916f
+Source0:	http://untroubled.org/qmail-notify/%{name}-%{version}.tar.gz
+# Source0-md5:	5afe9ac9fac10e999a278c78f17e31b0
 Source1:	%{name}.1
-URL:		http://em.ca/~bruceg/qmail-notify/
+URL:		http://untroubled.org/qmail-notify/
 Requires:	qmail
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
