@@ -1,5 +1,5 @@
 Summary:	Delayed delivery notification for qmail
-Summary(pl):	Powiadamianie o op�nionym dostarczaniu poczty dla qmaila
+Summary(pl.UTF-8):   Powiadamianie o opóźnionym dostarczaniu poczty dla qmaila
 Name:		qmail-notify
 Version:	0.93
 Release:	1
@@ -16,9 +16,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package contains a program to notify senders about email that has
 been held in the qmail queue.
 
-%description -l pl
-Ten pakiet zawiera program informuj�cy nadawc�w o poczcie, kt�ra
-utkwi�a w kolejce qmaila.
+%description -l pl.UTF-8
+Ten pakiet zawiera program informujący nadawców o poczcie, która
+utkwiła w kolejce qmaila.
 
 %prep
 %setup -q
