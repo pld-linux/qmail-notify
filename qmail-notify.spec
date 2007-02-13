@@ -1,5 +1,5 @@
 Summary:	Delayed delivery notification for qmail
-Summary(pl.UTF-8):   Powiadamianie o opóźnionym dostarczaniu poczty dla qmaila
+Summary(pl.UTF-8):	Powiadamianie o opóźnionym dostarczaniu poczty dla qmaila
 Name:		qmail-notify
 Version:	0.93
 Release:	1
